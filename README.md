@@ -2,7 +2,7 @@ var tailed list for miniKanren and cKanren
 =================
 
 
-# Readme:
+# Readme
     
      (run* (q) 
      	   (membero 3 q) )
@@ -13,7 +13,7 @@ This infinite loop can avoid by defining list ` lst ` as
      (fresh (tail)
      	    (conso c tail lst)
 
-This meaing is that 
+This meaing is
 
 list tail should be (not unified) var.
 ( Usually list tail is ` '() ` )  
