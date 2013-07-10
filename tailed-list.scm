@@ -6,10 +6,6 @@
 
  var-tailed-membero
 
- tailtag
- make-tag-tailed-listo
- tag-tailed-membero
-
 )
 
 
