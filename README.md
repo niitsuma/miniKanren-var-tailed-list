@@ -16,8 +16,7 @@ This infinite loop can avoid by defining list ` lst ` as
 This meaing is that 
 
 list tail should be (not unified) var.
-
-Usually list tail is ` '() `.  
+( Usually list tail is ` '() ` )  
 
 Using this "list" definition, membero can be
 
