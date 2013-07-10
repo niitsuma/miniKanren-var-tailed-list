@@ -11,7 +11,7 @@ is infinite loop.
 This infinite loop can avoid by defining list ` lst ` as 
 
      (fresh (tail)
-     	    (conso c tail lst)
+     	    (conso some tail lst)
 
 This meaing is
 
@@ -21,11 +21,11 @@ list tail should be (not unified) var.
 Using this "list" definition, membero can be
 
     (define (var-tailed-membero x lst)
-      (fresh (c tail)
-       (conso c tail lst)   
+      (fresh (some tail)
+       (conso some tail lst)   
         (conda
-          [(== x c)]
-          [(=/= x c)
+          [(== x some)]
+          [(=/= x some)
             (var-tailed-membero x tail)]
       )))
 
